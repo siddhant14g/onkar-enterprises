@@ -377,7 +377,9 @@ export default function App() {
               </div>
               <div>
                 <span className="font-semibold">Address: </span>
-                Sadashivnagar- 413111
+                <a href="https://maps.app.goo.gl/gyVsEQuCy7CwcL8XA" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                   Shop No 2, Onkar Enterprises, Near Bharat Petrol Pump, sadashivnagar, Maharashtra 413111
+                </a>
               </div>
               <div className="text-gray-500">
                 {translations[language].workingHours}
