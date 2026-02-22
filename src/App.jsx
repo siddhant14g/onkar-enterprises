@@ -376,9 +376,9 @@ export default function App() {
                 onkarenterprises@gmail.com
               </div>
               <div>
-                <span className="font-semibold">Address: </span>
+                <span className="font-semibold">Address: Shop No 2, Onkar Enterprises, Near Bharat Petrol Pump, sadashivnagar 413111 </span>
                 <a href="https://maps.app.goo.gl/gyVsEQuCy7CwcL8XA" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                   Shop No 2, Onkar Enterprises, Near Bharat Petrol Pump, sadashivnagar, Maharashtra 413111
+                   Google Maps
                 </a>
               </div>
               <div className="text-gray-500">
