@@ -36,6 +36,8 @@ const servicesData = [
 
   { category: "certificate", en: "Income Certificate", mr: "उत्पन्न दाखला", message: "I want to apply for Income Certificate" },
 
+  { category: "other", en: "JEE Exam Form", mr: "जीईई एक्साम फॉर्म", message: "I want JEE Exam Form" },
+
   { category: "card", en: "PAN Card (New/Correction)", mr: "पॅन कार्ड (नवीन / दुरुस्ती)", message: "I want PAN Card Service" },
 
   { category: "other", en: "Driving License", mr: "ड्रायव्हिंग लायसन्स", message: "I want Driving License Service" },
@@ -69,6 +71,8 @@ const servicesData = [
   { category: "card", en: "Life Certificate", mr: "जीवन प्रमाणपत्र", message: "I want Life Certificate" },
 
   { category: "certificate", en: "EWS Certificate", mr: "स्टेट / सेंट्रल EWS दाखला", message: "I want to apply for EWS Certificate" },
+
+  { category: "other", en: "MHT-CET Exam Form", mr: "एमएचटी-सीईटी एक्साम फॉर्म", message: "I want MHT-CET Exam Form" },
 
   { category: "other", en: "Police Clearance / Verification", mr: "पोलीस क्लिअरन्स / व्हेरिफिकेशन", message: "I want Police Clearance" },
 
