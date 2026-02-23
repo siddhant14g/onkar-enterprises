@@ -286,7 +286,7 @@ export default function App() {
                 placeholder={translations[language].search}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-xl text-sm shadow-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
+                className="flex-1 px-4 py-2 rounded-xl text-sm shadow-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
               />
 
               {/* Filter Dropdown */}
