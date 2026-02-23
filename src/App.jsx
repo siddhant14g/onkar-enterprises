@@ -298,9 +298,13 @@ export default function App() {
 
                 <button
                   onClick={() => setShowFilter(!showFilter)}
-                  className="bg-gray-700 text-white px-6 py-2 rounded-xl shadow-md whitespace-nowrap"
+                  className="relative bg-gray-700 text-white px-6 py-2 rounded-xl shadow-md whitespace-nowrap flex items-center gap-2"
                 >
                   {showFilter ? "▲" : "▼"} {language === "mr" ? "फिल्टर" : "Filter"}
+
+                  {activeCategory !== "all" && (
+                    <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></span>
+                  )}
                 </button>
 
                 {showFilter && (
@@ -311,9 +315,14 @@ export default function App() {
                         setActiveCategory("all");
                         setShowFilter(false);
                       }}
-                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
+                      className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
                     >
+                      {activeCategory === "all" && (
+                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                      )}
+                      <p className="ml-2"> </p>
                       {language === "mr" ? "सर्व" : "All"}
+
                     </button>
 
                     <button
@@ -321,9 +330,15 @@ export default function App() {
                         setActiveCategory("certificate");
                         setShowFilter(false);
                       }}
-                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
+                      className="flex  items-center w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
                     >
+                      {activeCategory === "certificate" && (
+                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                      )}
+                      <p className="ml-2"> </p>
                       {language === "mr" ? "प्रमाणपत्र सेवा" : "Certificate Services"}
+
+
                     </button>
 
                     <button
@@ -331,9 +346,15 @@ export default function App() {
                         setActiveCategory("card");
                         setShowFilter(false);
                       }}
-                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
+                      className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
                     >
+                      {activeCategory === "card" && (
+                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                      )}
+                      <p className="ml-2"> </p>
                       {language === "mr" ? "कार्ड व परवाने" : "Cards & Licenses"}
+
+
                     </button>
 
                     <button
@@ -341,9 +362,15 @@ export default function App() {
                         setActiveCategory("other");
                         setShowFilter(false);
                       }}
-                      className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
+                      className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg"
                     >
+                      {activeCategory === "other" && (
+                        <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                      )}
+                      <p className="ml-2"></p>
                       {language === "mr" ? "इतर सेवा" : "Other Services"}
+
+                      
                     </button>
 
                   </div>
